@@ -2,6 +2,13 @@ from art import logo
 import random
 from replit import clear
 
+# BlackJack considerations for this program 
+# 1) No Jokers
+# 2) Equal Probability for each card
+# 3) Face Cards count as 10
+# 4) Ace can count as 11/1
+# 5) If both bust, dealer wins
+
 def draw_card():
     """returns a random card from the deck"""
     cards=[11,2,3,4,5,6,7,8,9,10,10,10,10]
@@ -69,10 +76,3 @@ def playGame():
 while(input("Do you want to play a game of BlackJack? Type 'y' or 'n': ").lower()=="y"):
     clear()
     playGame()
-
-# BlackJack considerations for this program 
-# 1) No Jokers
-# 2) Equal Probability for each card
-# 3) Face Cards count as 10
-# 4) Ace can count as 11/1
-# 5) If both bust, dealer wins
